@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class Home extends StatelessWidget{
   const Home({super.key});
@@ -10,17 +11,18 @@ class Home extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Homepage", style: TextStyle(fontSize: 20, color: Colors.white),),
+        leading: IconButton(onPressed: () {  }, icon: const Icon(Iconsax.menu),),
+        title: const Text("Homepage", style: TextStyle(fontSize: 20, color: Colors.white),),
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
       extendBodyBehindAppBar: false,
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-        child: Center(
+        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+        child: const Center(
           child: Column(
             children: [
-              Text("Hello, your're in the homepage"),
+              Text("Hello, you're in the homepage"),
             ],
           ),
         ),
