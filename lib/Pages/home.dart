@@ -23,6 +23,14 @@ class Home extends StatelessWidget{
           child: Column(
             children: [
               Text("Hello, you're in the homepage"),
+              const SizedBox(
+                width: 50,
+                height: 70,
+              ),
+              SizedBox(
+                width: 100,
+                height: 600,)
+
             ],
           ),
         ),
