@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:videoplayer/Pages/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'VideoPlayer Implementation',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const (title: 'Home'),
+      debugShowCheckedModeBanner: false,
+      home: Home(),
     );
   }
 }

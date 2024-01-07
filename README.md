@@ -1,6 +1,10 @@
 # videoplayer
+A simple videoplayer using Flutter (Dart Framework)
 
-A new Flutter project.
+# About 
+Author: Josoa886
+mail: josoavonjiniaina13@gmail.com
+
 
 ## Getting Started
 
