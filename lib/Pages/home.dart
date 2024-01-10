@@ -1,7 +1,13 @@
 
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:videoplayer/Pages/files.dart';
+import 'package:videoplayer/library/bottom_navbar.dart';
+
+import 'help.dart';
 
 class Home extends StatelessWidget{
   const Home({super.key});
@@ -23,27 +29,21 @@ class Home extends StatelessWidget{
           child: Column(
             children: [
               Text("Hello, you're in the homepage"),
-              const SizedBox(
+              SizedBox(
                 width: 50,
                 height: 70,
               ),
               SizedBox(
                 width: 100,
                 height: 600,)
-
             ],
           ),
         ),
       ),
-      bottomNavigationBar: Container(
-        width: 50,
-        height: 60,
-        decoration: BoxDecoration(
-          color: Colors.blueAccent,
-        ),
-        //child: ,
-      ),
-      //bottomNavigationBar: ,
     );
   }
+}
+BottomNavBar() {
+  // TODO: implement BottomNavBar
+  throw UnimplementedError();
 }
