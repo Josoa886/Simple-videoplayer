@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:videoplayer/Pages/files.dart';
-import 'package:videoplayer/Pages/help.dart';
+import 'package:videoplayer/Pages/about.dart';
 import 'package:videoplayer/Pages/home.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -52,7 +52,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             items: [
               const BottomNavigationBarItem(icon: Icon(Iconsax.home), tooltip: "Home", label: "Home"),
               (pageIndex == 1) ? const BottomNavigationBarItem(icon: Icon(Iconsax.folder_open), tooltip: "Files", label: "Files") : const BottomNavigationBarItem(icon: Icon(Iconsax.folder), tooltip: "Files", label: "Files"),
-              const BottomNavigationBarItem(icon: Icon(Iconsax.info_circle), tooltip: "Help", label: "Help")
+              const BottomNavigationBarItem(icon: Icon(Iconsax.information), tooltip: "About", label: "About")
             ],
             onTap: (value){
               setState(() {

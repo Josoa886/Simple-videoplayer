@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:videoplayer/Pages/help.dart';
+import 'package:videoplayer/Pages/about.dart';
 import 'package:videoplayer/Pages/home.dart';
 
 class Files extends StatefulWidget {
@@ -18,7 +18,11 @@ class _FilesState extends State<Files> {
         backgroundColor: Colors.blueAccent,
         title: const Text(
           "Your files",
-          style: TextStyle(fontSize: 20, color: Colors.white),),
+          style: TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w500,
+              fontSize: 20,
+              color: Colors.white),),
         centerTitle: true,
       ),
       extendBodyBehindAppBar: false,

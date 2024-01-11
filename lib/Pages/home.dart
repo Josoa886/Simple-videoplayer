@@ -8,7 +8,7 @@ import 'package:videoplayer/Pages/files.dart';
 import 'package:videoplayer/library/bottom_navbar.dart';
 import 'package:videoplayer/screens/itemsScreen.dart';
 
-import 'help.dart';
+import 'about.dart';
 
 class Home extends StatelessWidget{
   const Home({super.key});
@@ -25,7 +25,7 @@ class Home extends StatelessWidget{
       ),
       extendBodyBehindAppBar: false,
       body: ListView(
-        padding: EdgeInsets.only(left: 15, right: 15),
+        padding: const EdgeInsets.only(left: 15, right: 15),
                 children: [
                   const SizedBox( height: 20,),
                   const Text(
@@ -43,7 +43,7 @@ class Home extends StatelessWidget{
                        itemBuilder: (context, index){
                          return GestureDetector(
                            onTap: (){
-                             Navigator.push(context, MaterialPageRoute(builder: (context) => Item()));
+                             Navigator.push(context, MaterialPageRoute(builder: (context) =>  Item()));
                            },
                            child: Container(
                              margin: const EdgeInsets.only(left: 10, right: 10),
