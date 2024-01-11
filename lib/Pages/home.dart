@@ -6,6 +6,7 @@ import 'package:flutter/rendering.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:videoplayer/Pages/files.dart';
 import 'package:videoplayer/library/bottom_navbar.dart';
+import 'package:videoplayer/screens/itemsScreen.dart';
 
 import 'help.dart';
 
@@ -40,7 +41,9 @@ class Home extends StatelessWidget{
                        itemCount: 10,
                        itemBuilder: (context, index){
                          return GestureDetector(
-                           onTap: (){},
+                           onTap: (){
+                             Navigator.push(context, MaterialPageRoute(builder: (context) => Item()));
+                           },
                            child: Container(
                              margin: const EdgeInsets.only(left: 10, right: 10),
                              alignment: Alignment.center,
