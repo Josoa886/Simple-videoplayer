@@ -26,6 +26,7 @@ class Home extends StatelessWidget{
       body: ListView(
         padding: EdgeInsets.only(left: 15, right: 15),
                 children: [
+                  const SizedBox( height: 20,),
                   const Text(
                     "Items A",
                     style: TextStyle(
