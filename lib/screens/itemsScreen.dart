@@ -14,13 +14,14 @@ class _ItemState extends State<Item> {
     return Scaffold(
       appBar: AppBar(
         elevation: 5,
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blueAccent,
         centerTitle: true,
         title: const Text(
             "Item content",
         style: TextStyle(
-          fontWeight: FontWeight.w700,
-          color: Colors.blueAccent,
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.w500,
+          color: Colors.white,
         ),),
       ),
     );

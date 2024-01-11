@@ -19,7 +19,7 @@ class Home extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(onPressed: () {  }, icon: const Icon(Iconsax.menu),),
-        title: const Text("Homepage", style: TextStyle(fontSize: 20, color: Colors.white),),
+        title: const Text("Homepage", style: TextStyle(fontFamily: 'Poppins',fontWeight: FontWeight.w500,fontSize: 20, color: Colors.white),),
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
@@ -31,8 +31,9 @@ class Home extends StatelessWidget{
                   const Text(
                     "Items A",
                     style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 20,
-                        fontWeight: FontWeight.w700
+                        fontWeight: FontWeight.w600
                     ),),
                  SizedBox(
                    height: 150,
@@ -62,9 +63,10 @@ class Home extends StatelessWidget{
                   const SizedBox( height: 30,),
                   const Text(
                     "Items B",
-                    style: TextStyle(
+                    style:  TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 20,
-                        fontWeight: FontWeight.w700
+                        fontWeight: FontWeight.w600
                     ),),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
@@ -75,9 +77,10 @@ class Home extends StatelessWidget{
                   const SizedBox( height: 30,),
                   const Text(
                     "Items C",
-                    style: TextStyle(
+                    style:  TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 20,
-                        fontWeight: FontWeight.w700
+                        fontWeight: FontWeight.w600
                     ),),
                   SizedBox(
                     height: 250,
@@ -105,9 +108,10 @@ class Home extends StatelessWidget{
                   const SizedBox( height: 30,),
                   const Text(
                     "Items D",
-                    style: TextStyle(
+                    style:  TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 20,
-                        fontWeight: FontWeight.w700
+                        fontWeight: FontWeight.w600
                     ),),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
@@ -119,9 +123,10 @@ class Home extends StatelessWidget{
                   const SizedBox( height: 30,),
                   const Text(
                     "Items E",
-                    style: TextStyle(
+                    style:  TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 20,
-                        fontWeight: FontWeight.w700
+                        fontWeight: FontWeight.w600
                     ),),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
