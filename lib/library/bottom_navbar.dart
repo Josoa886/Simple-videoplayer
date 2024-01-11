@@ -42,6 +42,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: BottomNavigationBar(
+            selectedFontSize: 15,
+            showSelectedLabels: true,
+            showUnselectedLabels: false,
             type: BottomNavigationBarType.fixed,
             selectedItemColor: Colors.white,
             backgroundColor: Colors.blueAccent,
