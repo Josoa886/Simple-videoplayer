@@ -37,7 +37,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     return Scaffold(
       bottomNavigationBar: Container(
         width: 50,
-        height: 60,
+        height: 75,
         padding:const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(10),

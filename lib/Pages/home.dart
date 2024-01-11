@@ -43,7 +43,3 @@ class Home extends StatelessWidget{
     );
   }
 }
-BottomNavBar() {
-  // TODO: implement BottomNavBar
-  throw UnimplementedError();
-}
