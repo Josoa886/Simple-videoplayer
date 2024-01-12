@@ -39,7 +39,7 @@ class _PresentationState extends State<Presentation> {
             ),
 
             Text(
-              "to VideoPlayer",
+              "to VidPlay",
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 20,

@@ -19,23 +19,55 @@ class Home extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(onPressed: () {  }, icon: const Icon(Iconsax.menu),),
         title: const Text("Homepage", style: TextStyle(fontFamily: 'Poppins',fontSize: 20, color: Colors.white),),
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
       extendBodyBehindAppBar: false,
+      drawer: Drawer(
+        backgroundColor: Colors.blueAccent,
+        child: Container(
+          color: Colors.white,
+          child: ListView(
+            children: const [
+              DrawerHeader(
+                  decoration: BoxDecoration(
+                      color: Colors.blueAccent),
+                  child: Center(
+                      child: Text(
+                        "VidPlay",
+                        style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontSize: 35 ),))
+              ),
+              ListTile(
+                leading: Icon(Iconsax.magic_star, size: 20,),
+                title: Text("My Favorites", style: TextStyle(fontSize: 15, fontFamily: 'Poppins' ),),
+              ),
+              ListTile(
+                leading: Icon(Iconsax.play_add, size: 20,),
+                title: Text("My playlist", style: TextStyle(fontSize: 15, fontFamily: 'Poppins' ),),
+              ),
+              ListTile(
+                leading: Icon(Icons.exit_to_app, size: 20,),
+                title: Text("Exit", style: TextStyle(fontSize: 15, fontFamily: 'Poppins' ),),
+              )
+            ],
+          ),
+        ),
+      ),
       body: ListView(
         padding: const EdgeInsets.only(left: 15, right: 15),
                 children: [
                   const SizedBox( height: 20,),
                   const Text(
-                    "Items A",
+                    "Recently Played",
                     style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
                         fontWeight: FontWeight.w600
                     ),),
+                 const SizedBox(height: 10,),
                  SizedBox(
                    height: 160,
                    child: ListView.builder(
@@ -77,7 +109,7 @@ class Home extends StatelessWidget{
 
                   const SizedBox( height: 30,),
                   const Text(
-                    "Items B",
+                    "News: Streams",
                     style:  TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
@@ -119,14 +151,15 @@ class Home extends StatelessWidget{
 
                   const SizedBox( height: 30,),
                   const Text(
-                    "Items C",
+                    "For you: New Playlist",
                     style:  TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
                         fontWeight: FontWeight.w600
                     ),),
+                  const SizedBox(height: 10,),
                   SizedBox(
-                    height: 250,
+                    height: 340,
                     child: ListView.builder(
                         scrollDirection: Axis.vertical,
                         itemCount: 5,
@@ -136,7 +169,7 @@ class Home extends StatelessWidget{
                             child: Container(
                               margin: const EdgeInsets.only(bottom: 10,),
                               alignment: Alignment.center,
-                              height: 80,
+                              height: 90,
                               decoration: BoxDecoration(
                                 color: Colors.deepPurpleAccent,
                                 borderRadius: BorderRadius.circular(10),
@@ -150,7 +183,7 @@ class Home extends StatelessWidget{
 
                   const SizedBox( height: 30,),
                   const Text(
-                    "Items D",
+                    "Ads: Switch to Premium",
                     style:  TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
@@ -168,7 +201,7 @@ class Home extends StatelessWidget{
 
                   const SizedBox( height: 30,),
                   const Text(
-                    "Items E",
+                    "Tools",
                     style:  TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,

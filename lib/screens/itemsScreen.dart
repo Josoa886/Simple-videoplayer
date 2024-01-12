@@ -20,7 +20,6 @@ class _ItemState extends State<Item> {
             "Item content",
         style: TextStyle(
           fontFamily: 'Poppins',
-          fontWeight: FontWeight.w500,
           color: Colors.white,
         ),),
       ),
