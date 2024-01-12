@@ -43,7 +43,7 @@ class Home extends StatelessWidget{
                        itemBuilder: (context, index){
                          return GestureDetector(
                            onTap: (){
-                             Navigator.push(context, MaterialPageRoute(builder: (context) =>  Item()));
+                             Navigator.push(context, MaterialPageRoute(builder: (context) =>  const Item()));
                            },
                            child: Container(
                              width: 150,
@@ -84,8 +84,34 @@ class Home extends StatelessWidget{
                     ),),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                    height: 150,
-                    color: Colors.grey,),
+                    height: 200,
+                    child: GestureDetector(
+                      onTap: (){},
+                      child:  const Card(
+                        elevation: 5,
+                        color: Colors.greenAccent,
+                        /*
+                      * child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              "New video",
+                              style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontSize: 15,
+                                  color: Colors.black26,
+                                  fontWeight: FontWeight.w500
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      * */
+                      ),
+                    )
+                  ),
 
 
                   const SizedBox( height: 30,),
@@ -130,7 +156,10 @@ class Home extends StatelessWidget{
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                     height: 200,
-                    color: Colors.green,
+                    child: const Card(
+                      elevation: 5,
+                      color: Colors.purpleAccent,
+                    ),
                   ),
 
 
@@ -145,7 +174,10 @@ class Home extends StatelessWidget{
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                     height: 200,
-                    color: Colors.green,
+                    child: const Card(
+                      elevation: 5,
+                      color: Colors.redAccent,
+                    ),
                   )
                 ],
               )
