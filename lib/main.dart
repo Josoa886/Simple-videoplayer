@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:videoplayer/Pages/home.dart';
+import 'package:videoplayer/Presentation/presentation.dart';
 import 'package:videoplayer/library/bottom_navbar.dart';
-import 'package:videoplayer/navigation.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Navigation(),
+      home: Presentation(),
     );
   }
 }
