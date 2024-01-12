@@ -36,7 +36,7 @@ class Home extends StatelessWidget{
                         fontWeight: FontWeight.w600
                     ),),
                  SizedBox(
-                   height: 150,
+                   height: 160,
                    child: ListView.builder(
                      scrollDirection: Axis.horizontal,
                        itemCount: 10,
@@ -46,16 +46,30 @@ class Home extends StatelessWidget{
                              Navigator.push(context, MaterialPageRoute(builder: (context) =>  Item()));
                            },
                            child: Container(
+                             width: 150,
                              margin: const EdgeInsets.only(left: 10, right: 10),
-                             alignment: Alignment.center,
-                             width: 100,
                              decoration: BoxDecoration(
-                               color: Colors.blueAccent,
                                borderRadius: BorderRadius.circular(10),
                              ),
-                             child: Text("${index +1}"),
-                           ),
-                         );
+                             child: const Card(
+                               elevation: 5,
+                               color: Colors.white,
+                               child: Column(
+                                 mainAxisAlignment: MainAxisAlignment.center,
+                                 children: [
+                                   Icon(Icons.error_outline_rounded, size: 40, color: Colors.red,),
+                                   SizedBox(height: 10,),
+                                   Text(
+                                     "Error while getting data",
+                                     style: TextStyle(
+                                       fontSize: 10,
+                                       fontFamily: 'Poppins'
+                                     ),
+                                   )
+                                 ],
+                               ),
+                             ),
+                             ));
                        }
                    ),
                  ),

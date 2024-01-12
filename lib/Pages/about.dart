@@ -15,7 +15,14 @@ class Help extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Iconsax.information, color: Colors.blueAccent, size: 30,),
-            Text("About Us", style: TextStyle(fontFamily: 'Poppins',fontSize: 20,fontWeight: FontWeight.normal, color: Colors.blueAccent),)
+            Text("About Us", style: TextStyle(fontFamily: 'Poppins',fontSize: 20,fontWeight: FontWeight.normal, color: Colors.blueAccent),),
+            SizedBox(height: 20,),
+            Text.rich(TextSpan(
+              children: [
+                TextSpan(text: "VideoPlayer App", style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.w500, color: Colors.black26, fontSize: 15)),
+                TextSpan(text: "    Version 1.0", style: TextStyle(fontFamily: 'Poppins', fontSize: 10, fontWeight: FontWeight.normal, color: Colors.black26))
+              ]
+            ),)
           ],
         ),
       ),
