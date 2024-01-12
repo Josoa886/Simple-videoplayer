@@ -7,6 +7,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:videoplayer/Pages/files.dart';
 import 'package:videoplayer/library/bottom_navbar.dart';
 import 'package:videoplayer/screens/itemsScreen.dart';
+import 'package:videoplayer/screens/newsList.dart';
 
 import 'about.dart';
 
@@ -19,7 +20,7 @@ class Home extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(onPressed: () {  }, icon: const Icon(Iconsax.menu),),
-        title: const Text("Homepage", style: TextStyle(fontFamily: 'Poppins',fontWeight: FontWeight.w500,fontSize: 20, color: Colors.white),),
+        title: const Text("Homepage", style: TextStyle(fontFamily: 'Poppins',fontSize: 20, color: Colors.white),),
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
@@ -86,7 +87,9 @@ class Home extends StatelessWidget{
                     margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                     height: 200,
                     child: GestureDetector(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => NewsList()));
+                      },
                       child:  const Card(
                         elevation: 5,
                         color: Colors.greenAccent,

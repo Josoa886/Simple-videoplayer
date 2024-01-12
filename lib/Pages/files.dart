@@ -21,7 +21,6 @@ class _FilesState extends State<Files> {
           "Your files",
           style: TextStyle(
               fontFamily: 'Poppins',
-              fontWeight: FontWeight.w500,
               fontSize: 20,
               color: Colors.white),),
         centerTitle: true,
