@@ -55,6 +55,6 @@ class _PresentationState extends State<Presentation> {
   // Pour afficher la page d'acceuil
   Future<void> goto() async{
     await Future.delayed( const Duration(seconds: 5));
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BottomNavBar()));
+    var pushReplacement = Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BottomNavBar()));
   }
 }
