@@ -13,15 +13,6 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  // Icons list
-  final iconList = [
-    const Icon(Iconsax.home),
-    const Icon(Iconsax.folder),
-    const Icon(Iconsax.folder_open),
-    const Icon(Iconsax.info_circle)
-  ];
-
-
   int pageIndex = 0; // Pages Index
 
 
@@ -51,7 +42,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             backgroundColor: Colors.blueAccent,
             currentIndex: pageIndex,
             items: [
-              const BottomNavigationBarItem(icon: Icon(Iconsax.home), tooltip: "Home", label: "Home"),
+              (pageIndex == 0) ? const BottomNavigationBarItem(icon: Icon(Iconsax.home_1), tooltip: "Home", label: "Home"): const BottomNavigationBarItem(icon: Icon(Iconsax.home), tooltip: "Home", label: "Home"),
               (pageIndex == 1) ? const BottomNavigationBarItem(icon: Icon(CupertinoIcons.folder_fill), tooltip: "Files", label: "Files") : const BottomNavigationBarItem(icon: Icon(CupertinoIcons.folder), tooltip: "Files", label: "Files"),
               (pageIndex == 2 ) ? const BottomNavigationBarItem(icon: Icon(CupertinoIcons.info_circle_fill), tooltip: "About", label: "About") : const BottomNavigationBarItem(icon: Icon(CupertinoIcons.info_circle), tooltip: "About", label: "About")
             ],
