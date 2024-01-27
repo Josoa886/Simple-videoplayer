@@ -28,6 +28,7 @@ class _PresentationState extends State<Presentation> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Icon(CupertinoIcons.video_camera, size: 120, color: Colors.white,),
             Text(
               "WELCOME",
               style: TextStyle(
