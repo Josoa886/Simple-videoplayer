@@ -36,6 +36,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Container(
+
         width: 50,
         height: 75,
         padding:const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
@@ -51,8 +52,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
             currentIndex: pageIndex,
             items: [
               const BottomNavigationBarItem(icon: Icon(Iconsax.home), tooltip: "Home", label: "Home"),
-              (pageIndex == 1) ? const BottomNavigationBarItem(icon: Icon(Iconsax.folder_open), tooltip: "Files", label: "Files") : const BottomNavigationBarItem(icon: Icon(Iconsax.folder), tooltip: "Files", label: "Files"),
-              const BottomNavigationBarItem(icon: Icon(Iconsax.information), tooltip: "About", label: "About")
+              (pageIndex == 1) ? const BottomNavigationBarItem(icon: Icon(CupertinoIcons.folder_fill), tooltip: "Files", label: "Files") : const BottomNavigationBarItem(icon: Icon(CupertinoIcons.folder), tooltip: "Files", label: "Files"),
+              (pageIndex == 2 ) ? const BottomNavigationBarItem(icon: Icon(CupertinoIcons.info_circle_fill), tooltip: "About", label: "About") : const BottomNavigationBarItem(icon: Icon(CupertinoIcons.info_circle), tooltip: "About", label: "About")
             ],
             onTap: (value){
               setState(() {
