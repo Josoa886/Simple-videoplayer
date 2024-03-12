@@ -1,9 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:videoplayer/Pages/about.dart';
-import 'package:videoplayer/Pages/home.dart';
 
 class Files extends StatefulWidget {
   const Files({super.key});

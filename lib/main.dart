@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:videoplayer/Pages/home.dart';
 import 'package:videoplayer/Presentation/presentation.dart';
-import 'package:videoplayer/library/bottom_navbar.dart';
 
 
 void main() {

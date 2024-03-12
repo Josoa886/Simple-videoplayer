@@ -1,15 +1,9 @@
 
-import 'dart:io';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:videoplayer/Pages/files.dart';
-import 'package:videoplayer/library/bottom_navbar.dart';
 import 'package:videoplayer/screens/itemsScreen.dart';
 import 'package:videoplayer/screens/newsList.dart';
 
-import 'about.dart';
 
 class Home extends StatelessWidget{
   const Home({super.key});
