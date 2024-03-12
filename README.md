@@ -5,6 +5,10 @@ A simple videoplayer using Flutter (Dart Framework)
 Author: Josoa886
 mail: josoavonjiniaina13@gmail.com
 
+## How to contribute
+- Use flutter 3.0.0 (I recommend to use the latest version)
+- Fork this repository 
+
 
 ## Getting Started
 
