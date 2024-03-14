@@ -20,7 +20,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   final pageList = [
     Home(),
     Files(),
-    Help()
+    Help(key: Key('help'))
   ];
 
   @override

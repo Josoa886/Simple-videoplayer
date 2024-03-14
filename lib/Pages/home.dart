@@ -42,7 +42,9 @@ class Home extends StatelessWidget{
                 leading: Icon(Iconsax.play_add, size: 20,),
                 title: Text("My playlist", style: TextStyle(fontSize: 15, fontFamily: 'Poppins' ),),
               ),
+              
               ListTile(
+                //onTap: ,
                 leading: Icon(Icons.exit_to_app, size: 20,),
                 title: Text("Exit", style: TextStyle(fontSize: 15, fontFamily: 'Poppins' ),),
               )
